@@ -20,7 +20,7 @@ jobs:
       run: |
         ls
     - name: upload docker file
-      uses: actions/upload-arifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: test_docker
         path: .
