@@ -1,8 +1,8 @@
 
 FROM golang:latest
-MAINTAINER Ycc "chen.ye@shunwang.com"
-WORKDIR $GOPATH/src/github.com/mygohttp
-ADD . $GOPATH/src/github.com/mygohttp
+MAINTAINER hyperxcode "277246252@qq.com"
+WORKDIR $GOPATH/src/github.com/hyperxcode/test_docker
+ADD . $GOPATH/src/github.com/hyperxcode/test_docker
 RUN go build .
 EXPOSE 6064
-ENTRYPOINT  ["./mygohttp"]
+ENTRYPOINT  ["./test_docker"]
