@@ -16,6 +16,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - shell: bash
+      run: |
+        ls
     - name: upload docker file
       uses: actions/upload-arifact@v2
       with:
