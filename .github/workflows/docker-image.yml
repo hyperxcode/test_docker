@@ -18,7 +18,7 @@ jobs:
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - shell: bash
       run: |
-        ls
+        docker images
     - name: upload docker file
       uses: actions/upload-artifact@v2
       with:
